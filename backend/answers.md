@@ -8,3 +8,9 @@ Why do we need express, cors, pg-promise, and dotenv?
 
 What does the .env file do?
  --- it's a text file that holds all of your secret environment variables. This helps with your security and confidentiality, and the only place you should store your API keys. (NEVER HARD CODE YOUR API KEYS IN YOUR CODE PLEASE!) ---
+ 
+ What does pg-promise do?
+  --- It helps connects to the database , executing queries, and managing database transactions, all in a promise way which fits well with modern JavaScript async programming. --- 
+
+Why do we use an object to configure the database connection instead of a single connection string?
+ --- We use an object to configure the database connection instead of a single connection string because it offer several advantages from software engineering perspective, especially as applications grow in complexity and scale. --- 
