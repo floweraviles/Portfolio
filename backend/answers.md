@@ -22,4 +22,13 @@ Why do we need express.json()?
  --- It's middleware used to automatically parse incoming JSON payloads, turning them into JavaScript ojects accessible via req.body. ---
 
 How can you change the port number of the server?
- --- Modify the server's port number by specifying it in the app.listen(PORT) call, where PORT can be set directly or through an environment variable like process.env.PORT. 
+ --- Modify the server's port number by specifying it in the app.listen(PORT) call, where PORT can be set directly or through an environment variable like process.env.PORT. ---
+
+ What is the difference between GET and POST requests?
+  --- GET requests are used for retrieving data and are visible in the URL, whereas POST requests are used for submitting data securely and can handle larger data payloads not visible in the URL. ---
+
+What does $1 do in the SQL query?
+ --- Its a placeholder in preparded statements that is replaced by a specific value provided during execution to enhance security and prevent SQL injection. ---
+
+What happens if a request is made to the POST route without a body?
+ --- If this happens the server's response with will depend on its setup, potentially resulting in an error if the body is expected. --- 
