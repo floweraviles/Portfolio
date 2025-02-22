@@ -14,3 +14,12 @@ What does the .env file do?
 
 Why do we use an object to configure the database connection instead of a single connection string?
  --- We use an object to configure the database connection instead of a single connection string because it offer several advantages from software engineering perspective, especially as applications grow in complexity and scale. --- 
+
+ What does app.use(cors()) do? 
+  --- This enacts middleware to enable Cross-Origin Resource Sharing (CORS) by adding headers that permits interactions from different domains with your server.
+
+Why do we need express.json()?
+ --- It's middleware used to automatically parse incoming JSON payloads, turning them into JavaScript ojects accessible via req.body. ---
+
+How can you change the port number of the server?
+ --- Modify the server's port number by specifying it in the app.listen(PORT) call, where PORT can be set directly or through an environment variable like process.env.PORT. 
